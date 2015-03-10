@@ -5,9 +5,7 @@
 <head runat="server">
     <title>Greg's Website</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.5.0/build/reset/reset-min.css">
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all" charset="utf-8" />
-    <link rel="stylesheet" href="css/MenuMatic.css" type="text/css" media="screen" charset="utf-8" />
     <!--[if lt IE 7]>
 			<link rel="stylesheet" href="css/MenuMatic-ie6.css" type="text/css" media="screen" charset="utf-8" />
 		<![endif]-->
@@ -19,110 +17,46 @@
 
         <a id="logo" href="http://greengeckodesign.com/projects/menumatic.aspx">MenuMatic</a>
 
-
-        <!-- BEGIN Menu -->
-        <ul id="nav">
-
-            <li><a href="#">Art of Computing</a>
-
-                <ul>
-
-                    <li><a href="#">Links</a>
-                        <ul>
-                            <li><a href="https://github.com/gwittmann1" title="GitHub" target="_blank">GitHub</a>
-                            </li>
-                            <li><a href="http://gwittmann.mrbenson.org/" title="WordPress" target="_blank">WordPress</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Articles</a>
-                        <ul>
-                            <li><a href="#">HTML Tags</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Processing</a>
-                        <ul>
-                            <li><a href="http://gwittmann.mrbenson.org/tag/game/">Spikes Game</a>
-                            </li>
-                            <li><a href="http://gwittmann.mrbenson.org/tag/masks/">Masks</a>
-                            </li>
-                            <li><a href="http://gwittmann.mrbenson.org/tag/gif/">Gifs</a>
-                            </li>
-                            <li><a href="http://gwittmann.mrbenson.org/tag/lasercutting/">Laser Cutting</a>
-                            </li>
-                            <li><a href="http://gwittmann.mrbenson.org/tag/flxworld/">Flxworld</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-
-            <li><a href="#">Science Olympiad</a>
-                <ul>
-                    <li><a href="#">Bridge Building</a>
-
-                        <ul>
-
-                            <li><a href="http://gwittmann.mrbenson.org/tag/bridge/">2014/15</a>
-                            </li>
-
-                        </ul>
-                    </li>
-                    <li><a href="#">Boomilever</a>
-                        <ul>
-
-                            <li><a href="#">2013/14</a>
-                            </li>
-
-                        </ul>
-                    </li>
-
-                </ul>
-            </li>
+        <div id="include">
 
 
-        </ul>
+            <div id="content">
 
-        <!-- END Menu -->
+                </p>
+            </div>
 
-        <div id="content">
-            <h1>Test</h1>
-            <p>Test.</p>
+        </div>
+        <div id="footer">
+
         </div>
 
-    </div>
-    <div id="footer">
+        <!-- Load the Mootools Framework -->
+        <script src="http://www.google.com/jsapi"></script>
+        <script>
+            google.load("mootools", "1.2.1");
+        </script>
 
-    </div>
+        <!-- Load the MenuMatic Class -->
+        <script src="js/MenuMatic_0.68.3.js" type="text/javascript" charset="utf-8"></script>
 
-    <!-- Load the Mootools Framework -->
-    <script src="http://www.google.com/jsapi"></script>
-    <script>
-        google.load("mootools", "1.2.1");
-    </script>
+        <!-- Create a MenuMatic Instance -->
+        <script type="text/javascript">
+            window.addEvent('domready', function () {
+                var myMenu = new MenuMatic();
+            });
+        </script>
 
-    <!-- Load the MenuMatic Class -->
-    <script src="js/MenuMatic_0.68.3.js" type="text/javascript" charset="utf-8"></script>
-
-    <!-- Create a MenuMatic Instance -->
-    <script type="text/javascript">
-        window.addEvent('domready', function () {
-            var myMenu = new MenuMatic();
-        });
-    </script>
-
-    <!-- begin google tracking code -->
-    <script type="text/javascript">
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-        var pageTracker = _gat._getTracker("UA-2180518-1");
-        pageTracker._initData();
-        pageTracker._trackPageview();
-    </script>
-    <!-- end google tracking code -->
+        <!-- begin google tracking code -->
+        <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+            var pageTracker = _gat._getTracker("UA-2180518-1");
+            pageTracker._initData();
+            pageTracker._trackPageview();
+        </script>
+        <!-- end google tracking code -->
 
 </body>
 
